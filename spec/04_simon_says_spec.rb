@@ -21,19 +21,19 @@ describe "Simon says" do
      end
    end
 
-   #describe "repeat" do
-  #    it "should repeat" do
-  #      expect(repeat("hello")).to eq("hello hello")
-  #    end
+   describe "repeat" do
+      it "should repeat" do
+        expect(repeat("hello")).to eq("hello hello")
+      end
 
-  #    # Wait a second! How can you make the "repeat" method
-  #    # take one *or* two arguments?
-  #    #
-  #    # Hint: *default values* https://www.skorks.com/2009/08/method-arguments-in-ruby/
-  #    it "should repeat a number of times" do
-  #      expect(repeat("hello", 3)).to eq("hello hello hello")
-  #    end
-  #  end
+      # Wait a second! How can you make the "repeat" method
+      # take one *or* two arguments?
+      #
+      # Hint: *default values* https://www.skorks.com/2009/08/method-arguments-in-ruby/
+      it "should repeat a number of times" do
+        expect(repeat("hello", 3)).to eq("hello hello hello")
+      end
+    end
 
    describe "start_of_word" do
      it "returns the first letter" do
@@ -67,17 +67,17 @@ describe "Simon says" do
        expect(titleize("jaws")).to eq("Jaws")
      end
 
-  #   it "capitalizes every word (aka title case)" do
-  #     expect(titleize("david copperfield")).to eq("David Copperfield")
-  #   end
+     it "capitalizes every word (aka title case)" do
+       expect(titleize("david copperfield")).to eq("David Copperfield")
+     end
 
-  #   it "doesn't capitalize 'little words' in a title" do
-  #     expect(titleize("war and peace")).to eq("War and Peace")
-  #   end
+     it "doesn't capitalize 'little words' in a title" do
+       expect(titleize("war and peace")).to eq("War and Peace")
+     end
 
-  #   it "does capitalize 'little words' at the start of a title" do
-  #     expect(titleize("the bridge over the river kwai")).to eq("The Bridge Over the River Kwai")
-  #   end
+     it "does capitalize 'little words' at the start of a title" do
+       expect(titleize("the bridge over the river kwai")).to eq("The Bridge Over the River Kwai")
+     end
    end
 
 end
